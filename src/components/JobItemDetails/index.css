@@ -1,0 +1,34 @@
+.job-details-card {
+  border-radius: 7px;
+  padding: 10px;
+  background-color: #312f2f;
+  color: white;
+  margin: 5px;
+}
+.jobs-card-link {
+  text-decoration: none;
+}
+.company-logo {
+  width: 8%;
+  height: 45px;
+  padding-top: 5px;
+  margin-right: 10px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 7px;
+}
+.location-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.star {
+  color: yellow;
+  margin-right: 5px;
+  /* background-color: yellow; */
+}

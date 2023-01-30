@@ -1,0 +1,24 @@
+.home-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.home-content {
+  margin: 5%;
+  width: 50%;
+  color: white;
+}
+
+.find-jobs-btn {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  width: 100px;
+  padding: 5px;
+  border-radius: 3px;
+}

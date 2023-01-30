@@ -1,0 +1,49 @@
+.login-container {
+  background-color: black !important;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-content {
+  border-radius: 5px;
+  width: 20vw;
+  background-color: #272727;
+  padding: 20px;
+}
+
+label {
+  font-size: 12px;
+  margin: 3px;
+  background-color: none;
+}
+.userpwd-label {
+  background-color: none;
+  color: white;
+}
+.userpwd-input {
+  width: 100%;
+  margin: 3px;
+  background-color: none;
+}
+button {
+  background-color: #6366f1;
+  width: 100%;
+  border: none;
+  padding: 3px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+img {
+  height: 25px;
+  width: 120px;
+  margin-bottom: 15px;
+  padding: 3px;
+}
+
+.img-container {
+  text-align: center;
+}

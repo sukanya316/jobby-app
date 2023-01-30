@@ -1,0 +1,158 @@
+.job-details-details {
+  background-color: black;
+  padding: 20px;
+  color: white;
+}
+.descr-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+
+  /* background-color: #272727; */
+}
+.visit-url {
+  color: #b6c5ff;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.skill-element {
+  width: 30vw;
+  height: 15vh;
+}
+.skill-logo {
+  height: 70%;
+  width: 25%;
+  margin-right: 3%;
+}
+.similar-jobs-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-between;
+}
+.similar-job-card {
+  background-color: #272727;
+  border-radius: 10px;
+  width: 30vw;
+  margin: 2px;
+  padding: 8px;
+}
+.similar-job-title {
+  width: 43%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.life-at-company {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.life-at-image {
+  width: 50%;
+  height: 100%;
+}
+.jobs-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #272727;
+  padding: 3%;
+  height: 100vh;
+}
+
+.list-of-jobs {
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  /* overflow: scroll; */
+}
+.similar-job-logo {
+  height: 25%;
+  width: 25%;
+}
+.loc-emp-container {
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.employtype-container {
+  /* width: 15%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.location-container {
+  /* width: 15%; */
+  display: flex;
+  flex-direction: row;
+}
+.profile-details-container {
+  width: 25vw;
+}
+ul {
+  list-style-type: none;
+}
+.profile-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100%;
+  /* margin-top: -18px; */
+  border-radius: 7px;
+  padding: 10px;
+}
+.type-of-employment {
+  color: white;
+  width: 100%;
+}
+
+.employment-list {
+  list-style-type: none;
+}
+label {
+  background-color: #272727;
+  font-size: 14px;
+}
+.salary-range-list {
+  list-style-type: none;
+  color: white;
+}
+.search-el-container {
+  width: 20vw;
+  margin-left: 6%;
+  padding: 5px;
+}
+.salary-range {
+  color: white;
+}
+
+.search-icon {
+  background-color: gray;
+  border: none;
+  width: 30px;
+  height: 29px;
+  padding: 7px;
+  margin-top: -25px;
+  margin-left: -33px;
+  margin-bottom: -10px;
+}
+.profile-logo {
+  height: 8vh;
+  width: 6vw;
+}
+.company-logo {
+  height: 5%;
+  width: 5%;
+}
