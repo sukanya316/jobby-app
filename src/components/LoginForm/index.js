@@ -4,7 +4,7 @@ import Cookies from 'js-cookie'
 import './index.css'
 
 class LoginForm extends Component {
-  state = {username: '', password: ''}
+  state = {username: '', password: '', errMsg: ''}
 
   onUsernameChange = event => {
     this.setState({username: event.target.value})
@@ -20,11 +20,13 @@ class LoginForm extends Component {
       expires: 30,
       path: '/',
     })
+    this.setState({errMsg: ''})
     history.replace('/')
   }
 
   onSubmitFailure = () => {
     const {history} = this.props
+    this.setState({errMsg: "Username and password didn't match"})
     history.replace('/login')
   }
 
@@ -48,6 +50,7 @@ class LoginForm extends Component {
   }
 
   render() {
+    const {errMsg} = this.state
     return (
       <div className="login-container">
         <div className="login-content">
@@ -83,6 +86,7 @@ class LoginForm extends Component {
             />
             <br />
             <button type="submit">Login</button>
+            {errMsg !== '' ? <p className="err-msg">{errMsg}</p> : ''}
           </form>
         </div>
       </div>

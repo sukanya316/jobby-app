@@ -165,7 +165,7 @@ class Jobs extends Component {
 
   renderLoaderView = () => (
     <div className="jobs-loader-container">
-      <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
+      <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
     </div>
   )
 
@@ -310,38 +310,42 @@ class Jobs extends Component {
               {this.getSalaryRangesList()}
             </div>
           </div>
-          {isLoading ? (
-            this.renderLoaderView()
-          ) : (
-            <div className="list-of-jobs">
-              <div>
-                <input
-                  type="search"
-                  id="searchEl"
-                  className="search-el-container"
-                  placeholder="Search"
-                />
-                <BsSearch className="search-icon" onClick={this.onSearchJobs} />
-              </div>
-              {jobs.length === 0 ? (
-                <div className="no-jobs-container">
-                  <img
-                    src="https://assets.ccbp.in/frontend/react-js/no-jobs-img.png"
-                    alt="no jobs"
-                    className="no-jobs-logo"
-                  />
-                  <h3>No Jobs Found</h3>
-                  <p>We could npt find any jobs.Try other filters</p>
-                </div>
-              ) : (
-                <ul>
-                  {jobs.map(job => (
-                    <JobItemDetails jobsData={job} key={job.id} />
-                  ))}
-                </ul>
-              )}
+          <div className="list-of-jobs">
+            <div>
+              <input
+                type="search"
+                id="searchEl"
+                className="search-el-container"
+                placeholder="Search"
+              />
+              <BsSearch className="search-icon" onClick={this.onSearchJobs} />
             </div>
-          )}
+            <>
+              {isLoading ? (
+                this.renderLoaderView()
+              ) : (
+                <div>
+                  {jobs.length === 0 ? (
+                    <div className="no-jobs-container">
+                      <img
+                        src="https://assets.ccbp.in/frontend/react-js/no-jobs-img.png"
+                        alt="no jobs"
+                        className="no-jobs-logo"
+                      />
+                      <h3>No Jobs Found</h3>
+                      <p>We could npt find any jobs.Try other filters</p>
+                    </div>
+                  ) : (
+                    <ul>
+                      {jobs.map(job => (
+                        <JobItemDetails jobsData={job} key={job.id} />
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              )}
+            </>
+          </div>
         </div>
       </>
     )
