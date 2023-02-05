@@ -1,7 +1,7 @@
 {
   "name": "jobby-app",
   "private": true,
-  "homepage": "http://sukanya316.github.io/react-jobby-app",
+  "homepage": "http://sukanya316.github.io/jobby-app",
   "version": "1.0.0",
   "engines": {
     "node": "^10.13 || 12 || 14 || 15",
